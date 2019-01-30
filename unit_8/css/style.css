@@ -5,6 +5,7 @@ header, aside, nav, article, footer, section, main, div {
 }
 
 body   {
+    margin: 0;
     font-size: 16px;
 }
 
@@ -156,7 +157,11 @@ section .right {
     }
 }
 
-@media only screen and (max-width: 630px) and (min-width: 520px) {
+@media only screen and (max-width: 710px) and (min-width: 436px) {
+    body {
+        font-size: 14px;
+    }
+
     header .left {
         float: none;
         width: 40%;
@@ -169,17 +174,41 @@ section .right {
     }
 }
 
-@media only screen and (max-width: 520px) {
-   /*it should become a breadcrumb*/
+@media only screen and (max-width: 615px) {
+   /*middle section should be smaller*/
+    #home-main-article h1 {
+        font-size: 4em;
+        margin-top: 0.1em;
+        margin-bottom: 0.1em;
+    } 
 
-   header .left {
-        width: 7em;
+    #home-main-article h2 { 
+        font-size: 4em;
+        margin-top: 0.1em;
+        margin-bottom: 0.1em;
     }
+
+    #home-main-article h3 {
+        font-size: 3em;
+        margin-top: 0.1em;
+        margin-bottom: 0.1em;
+    }
+    
 }
 
-@media only screen and (max-width: 710px) {
-   /*middle section should be smaller*/
-    body {
-        font-size: 14px;
+@media only screen and (max-width: 435px) {
+    /*hamburger menu has to begin*/
+    /*icons for email insta etc. have to appear*/
+    header .left {
+        width: 7em;
     }
+
+    .top-nav > li {
+        display: none;
+    }
+
+    body {
+        font-size: 8px;
+    }
+    
 }
