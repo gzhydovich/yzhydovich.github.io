@@ -207,8 +207,22 @@ section .right {
         display: none;
     }
 
+    .top-nav > li:last-child {
+        display: block;
+    }
+
+
     body {
         font-size: 11px;
     }
     
+}
+
+@media only screen and (min-width: 435px) {
+     /*till this moment ham item has to hide*/
+
+     .top-nav > li:last-child {
+        display: none;
+    }
+
 }
