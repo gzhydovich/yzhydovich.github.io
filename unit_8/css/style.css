@@ -226,3 +226,11 @@ section .right {
     }
 
 }
+
+@media only screen and (max-width: 335px) {
+ 
+    body {
+        font-size: 10px;
+    }
+    
+}
