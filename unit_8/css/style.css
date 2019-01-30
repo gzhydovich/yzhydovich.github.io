@@ -219,12 +219,22 @@ section .right {
 }
 
 @media only screen and (min-width: 435px) {
-     /*till this moment ham item has to hide*/
+    /*till this moment ham item has to hide*/
 
-     .top-nav > li:last-child {
+    .top-nav > li:last-child {
         display: none;
     }
 
+    .social-ul > li:nth-child(n+6) {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 435px) {
+    .social-ul > li:nth-child(-n+5) {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 335px) {
