@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Staatliches|Dancing+Script');
+
+
+
+header, aside, nav, article, footer, section, main, div {
+    /*border: 1px white solid;*/
+}
+
+header, aside, nav, article, footer, section, main, div {
+    /*padding: 20px;*/
+}
+
+footer {
+    margin-top: 6em;
+    text-align: center;
+}
+
+h1 { 
+    font-size: 6em;
+    font-family: 'Staatliches', serif;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+h2 { 
+    font-size: 6em;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+h3 {
+    font-size: 4em;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+h2, h3 {
+    font-family: 'Dancing Script', serif;
+}
+
+p {
+    font-family: 'Staatliches', serif;
+}
+
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.logo {
+    width: 100%;
+}
+
+.picture {
+    float: left;
+    width: 30%;
+}
+
+#home-main-article {
+    text-align: center;
+    padding: 40px;
+}
+
+#middle-nav-ul {
+    padding-left: 0;
+}
+
+.top-nav li, #middle-nav-ul li, .social-ul li {
+  display: inline;
+  font-family: 'Staatliches', serif;
+}
+
+.top-nav li {
+    font-size: 2em;
+    padding: 0.2em;
+}
+
+#middle-nav {
+    text-align: center;
+}
+
+#middle-nav-ul li {
+    font-size: 2em;
+    border: 3px white solid;
+    padding: 0.5em;
+}
+
+.social-ul {
+    padding-left: 0;
+}
+
+.social-ul li {
+    font-size: 1.5em;
+}
+
+#wrapper-index {
+    padding: 20px;
+    color: white;
+    background-image: url("../images/attempt-1-sunscreen.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
+
+#wrapper-about {
+    padding: 20px;
+    background-color: grey;
+}
+
+header .left {
+    float: left;
+    width: 7%;
+    min-width: 80px;
+}
+
+header .right {
+    padding-top: 10px;
+    float: right;   
+    width: 50%;
+    text-align: right;
+}
+
+section .left {
+    /*padding: 20px;*/
+    float: left;
+    width: 60%;
+    min-width: 40px;
+}
+
+section .right {
+    /*padding: 20px;*/
+    float: right;   
+    width: 30%;
+    text-align: right;
+}

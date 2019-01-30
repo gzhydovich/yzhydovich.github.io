@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Staatliches|Dancing+Script');
+
+header, aside, nav, article, footer, section, main, div {
+    /*border: 1px white solid;*/
+}
+
+body   {
+    font-size: 16px;
+}
+
+footer {
+    margin-top: 6em;
+    text-align: center;
+}
+
+h1 { 
+    font-size: 6em;
+    font-family: 'Staatliches', serif;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+h2 { 
+    font-size: 6em;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+h3 {
+    font-size: 4em;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+h2, h3 {
+    font-family: 'Dancing Script', serif;
+}
+
+p {
+    font-family: 'Staatliches', serif;
+}
+
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: white;
+    text-decoration: underline;
+}
+
+header .left {
+    float: left;
+    width: 20%;
+}
+
+header .right {
+    float: right;
+    /*width: 70%;*/
+    text-align: right;
+}
+
+section .left {
+    float: left;
+    width: 60%;
+    min-width: 2.5em;
+}
+
+section .right {
+    float: right;   
+    width: 30%;
+    text-align: right;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.picture {
+    float: left;
+    width: 30%;
+}
+
+.logo {
+    width: 100%;
+    text-align: center;
+    font-size: 3.8em;
+    display: inline-block;
+    font-family: 'Dancing Script', serif;
+    font-weight: bold;
+}
+
+.top-nav {
+    padding-left: 0;
+}
+
+.top-nav li, .social-ul li {
+  display: inline;
+  font-family: 'Staatliches', serif;
+}
+
+.top-nav li {
+    font-size: 2em;
+    padding: 0.2em;
+}
+
+.social-ul {
+    padding-left: 0;
+}
+
+.social-ul li {
+    font-size: 1.5em;
+}
+
+#middle-nav a {
+    width: 4em;
+    font-size: 2em;
+    padding: 0.5em;
+    border: 0.1em white solid;
+    display: inline-block;
+    font-family: 'Staatliches', serif;
+}
+
+#home-main-article {
+    text-align: center;
+    padding: 2.5em;
+}
+
+#middle-nav {
+    text-align: center;
+}
+
+#wrapper-index {
+    padding: 1.25em;
+    color: white;
+    background-image: url("../images/attempt-1-sunscreen.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
+
+#wrapper-about {
+    padding: 1.25em;
+    background-color: grey;
+}
+
+@media only screen and (max-width: 800px) {
+    .top-nav > li:first-child {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 630px) and (min-width: 520px) {
+    header .left {
+        float: none;
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    header .right {
+        float: none;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+   /*it should become a breadcrumb*/
+
+   header .left {
+        width: 7em;
+    }
+}
+
+@media only screen and (max-width: 710px) {
+   /*middle section should be smaller*/
+    body {
+        font-size: 14px;
+    }
+}
