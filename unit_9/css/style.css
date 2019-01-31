@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css?family=Staatliches|Dancing+Script');
+
+header, aside, nav, article, footer, section, main, div, li{
+    /*border: 1px white solid;*/
+}
+
+body   {
+    margin: 0;
+    font-size: 16px;
+}
+
+footer {
+    margin-top: 6em;
+    text-align: center;
+}
+
+h1 { 
+    font-size: 6em;
+    font-family: 'Staatliches', serif;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+h2 { 
+    font-size: 6em;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+h3 {
+    font-size: 4em;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+h2, h3 {
+    font-family: 'Dancing Script', serif;
+}
+
+p {
+    font-family: 'Staatliches', serif;
+}
+
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: white;
+    text-decoration: underline;
+}
+
+header .left {
+    float: left;
+    width: 20%;
+}
+
+header .right {
+    float: right;
+    /*width: 70%;*/
+    text-align: right;
+}
+
+section .left {
+    float: left;
+    width: 60%;
+    min-width: 2.5em;
+}
+
+section .right {
+    float: right;   
+    width: 30%;
+    text-align: right;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.picture {
+    float: left;
+    width: 30%;
+}
+
+.logo {
+    width: 100%;
+    text-align: center;
+    font-size: 3.8em;
+    display: inline-block;
+    font-family: 'Dancing Script', serif;
+    font-weight: bold;
+}
+
+.top-nav {
+    padding-left: 0;
+}
+
+.top-nav li, .social-ul li {
+  display: inline;
+  font-family: 'Staatliches', serif;
+}
+
+.top-nav li {
+    font-size: 2em;
+    padding: 0.2em;
+}
+
+.social-ul {
+    padding-left: 0;
+}
+
+.social-ul li {
+    font-size: 1.5em;
+}
+
+#middle-nav a {
+    width: 4em;
+    font-size: 2em;
+    padding: 0.5em;
+    border: 0.1em white solid;
+    display: inline-block;
+    font-family: 'Staatliches', serif;
+}
+
+#home-main-article {
+    text-align: center;
+    padding: 2.5em;
+}
+
+#middle-nav {
+    text-align: center;
+}
+
+#wrapper-index {
+    padding: 1.25em;
+    color: white;
+    background-image: url("../images/attempt-1-sunscreen.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
+
+#wrapper-about {
+    padding: 1.25em;
+    background-color: grey;
+}
+
+#wrapper-hamburger {
+    padding: .25em .3em 1.25em .25em;
+    color: white;
+    background-image: url("../images/attempt-1-sunscreen.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-size: 4em;
+    font-family: 'Staatliches', serif;
+}
+
+#exit {
+    text-align: right;
+}
+
+#wrapper-hamburger ul {
+    margin-top: 0;
+    list-style-type: none;
+}
+
+#list-hamburger li {
+    margin: 1em 0;
+}
+
+@media only screen and (max-width: 800px) {
+    .top-nav > li:first-child {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 710px) and (min-width: 436px) {
+    body {
+        font-size: 14px;
+    }
+
+    header .left {
+        float: none;
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    header .right {
+        float: none;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 615px) {
+   /*middle section should be smaller*/
+    #home-main-article h1 {
+        font-size: 4em;
+        margin-top: 0.1em;
+        margin-bottom: 0.1em;
+    } 
+
+    #home-main-article h2 { 
+        font-size: 4em;
+        margin-top: 0.1em;
+        margin-bottom: 0.1em;
+    }
+
+    #home-main-article h3 {
+        font-size: 3em;
+        margin-top: 0.1em;
+        margin-bottom: 0.1em;
+    }
+    
+}
+
+@media only screen and (max-width: 435px) {
+    /*hamburger menu has to begin*/
+    /*icons for email insta etc. have to appear*/
+    header .left {
+        width: 7em;
+    }
+
+    .top-nav > li {
+        display: none;
+    }
+
+    .top-nav > li:last-child {
+        display: block;
+    }
+
+
+    body {
+        font-size: 11px;
+    }
+    
+}
+
+@media only screen and (min-width: 436px) {
+    /*till this moment ham item has to hide*/
+
+    .top-nav > li:last-child {
+        display: none;
+    }
+
+    .social-ul > li:nth-child(n+6) {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 435px) {
+    .social-ul > li:nth-child(-n+5) {
+        display: none;
+    }
+
+    .top-nav {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 335px) {
+ 
+    body {
+        font-size: 8px;
+    }
+    
+}
