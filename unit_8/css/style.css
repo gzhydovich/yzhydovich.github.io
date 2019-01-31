@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Staatliches|Dancing+Script');
 
-header, aside, nav, article, footer, section, main, div {
+header, aside, nav, article, footer, section, main, div, li{
     /*border: 1px white solid;*/
 }
 
@@ -218,7 +218,7 @@ section .right {
     
 }
 
-@media only screen and (min-width: 435px) {
+@media only screen and (min-width: 436px) {
     /*till this moment ham item has to hide*/
 
     .top-nav > li:last-child {
@@ -234,6 +234,10 @@ section .right {
 @media only screen and (max-width: 435px) {
     .social-ul > li:nth-child(-n+5) {
         display: none;
+    }
+
+    .top-nav {
+        margin: 0;
     }
 }
 
