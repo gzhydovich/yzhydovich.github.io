@@ -151,6 +151,26 @@ section .right {
     background-color: grey;
 }
 
+#wrapper-hamburger {
+    padding: .25em .3em 1.25em .25em;
+    color: white;
+    background-image: url("../images/attempt-1-sunscreen.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-size: 4em;
+    font-family: 'Staatliches', serif;
+}
+
+#wrapper-hamburger ul {
+    margin-top: 0;
+    list-style-type: none;
+}
+
+#exit {
+    text-align: right;
+}
+
 @media only screen and (max-width: 800px) {
     .top-nav > li:first-child {
         display: none;
