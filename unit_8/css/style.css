@@ -162,13 +162,17 @@ section .right {
     font-family: 'Staatliches', serif;
 }
 
+#exit {
+    text-align: right;
+}
+
 #wrapper-hamburger ul {
     margin-top: 0;
     list-style-type: none;
 }
 
-#exit {
-    text-align: right;
+#list-hamburger li {
+    margin: 1em 0;
 }
 
 @media only screen and (max-width: 800px) {
